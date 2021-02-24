@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html dir="ltr">
 
@@ -52,7 +51,12 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="your name">
+                                        <input class="form-control" type="text" placeholder="First name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="Last name">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
@@ -63,6 +67,11 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <input class="form-control" type="password" placeholder="password">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="password" placeholder="Repeat password">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 text-center">
