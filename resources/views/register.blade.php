@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html dir="ltr">
 
@@ -48,28 +47,40 @@
                     <div class="p-3">
                         <img src="assets/images/big/icon.png" alt="wrapkit">
                         <h2 class="mt-3 text-center">Sign Up for Free</h2>
-                        <form class="mt-4">
+                        <form class="mt-4" action="{{url('postRegister')}}" method="POST" id="regForm">
+                        @csrf
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="your name">
+                                        <input class="form-control" type="text" id="inputName"name="name"placeholder="Username">
                                     </div>
+                                    @if ($errors->has('name'))
+                                    <span class="error">{{ $errors-> first('name')}}</span>
+                                    @endif
+                                </div>
+                                
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" name="email"placeholder="email address">
+                                    </div>
+                                    @if ($errors->has('email'))
+                                    <span class="error">{{ $errors-> first('email')}}</span>
+                                    @endif
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" type="email" placeholder="email address">
+                                        <input class="form-control" type="password" name="password"placeholder="password">
                                     </div>
+                                    @if ($errors->has('password'))
+                                    <span class="error">{{ $errors-> first('password')}}</span>
+                                    @endif
                                 </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" type="password" placeholder="password">
-                                    </div>
-                                </div>
+    
                                 <div class="col-lg-12 text-center">
                                     <button type="submit" class="btn btn-block btn-dark">Sign Up</button>
                                 </div>
                                 <div class="col-lg-12 text-center mt-5">
-                                    Already have an account? <a href="/login" class="text-danger">Sign In</a>
+                                    Already have an account? <a href="/" class="text-danger">Sign In</a>
                                 </div>
                             </div>
                         </form>

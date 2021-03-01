@@ -15,9 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 /*Route::get('/', function () {
     return view('welcome');
-});
-*/
-Route::get('/','backController@index');
+});*/
+Route::post('postLogin','Authcontroller@postLogin');
+Route::post('postRegister','Authcontroller@postRegister');
+Route::get('/','backcontroller@index');
+Route::get('logout','Authcontroller@logout');
+
 Route::get('/home',function(){
     return view('home');
 });
@@ -33,7 +36,7 @@ Route::get('/app-chat',function(){
 Route::get('/ticketlist',function(){
     return view('ticketlist');
 });
-Route::get('/login',function(){
+Route::get('/',function(){
     return view('login');
 });
 Route::get('/register',function(){

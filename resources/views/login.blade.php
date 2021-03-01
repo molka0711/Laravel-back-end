@@ -51,27 +51,35 @@
                         </div>
                         <h2 class="mt-3 text-center">Sign In</h2>
                         <p class="text-center">Enter your email address and password to access admin panel.</p>
-                        <form class="mt-4">
+                        <form class="mt-4" action ="{{url('postLogin')}}" method="POST" id="logform">
+                             @csrf
+                             
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="uname">Username</label>
-                                        <input class="form-control" id="uname" type="text"
+                                        <input class="form-control" id="name" type="text" name="name"
                                             placeholder="enter your username">
                                     </div>
+                                    @if ($errors->has('name'))
+                                    <span class="error">{{ $errors-> first('name')}}</span>
+                                    @endif
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="pwd">Password</label>
-                                        <input class="form-control" id="pwd" type="password"
+                                        <input class="form-control" id="pwd" name="password" type="password"
                                             placeholder="enter your password">
                                     </div>
+                                    @if ($errors->has('password'))
+                                    <span class="error">{{ $errors->first('password')}} </span>
+                                    @endif
                                 </div>
                                 <div class="col-lg-12 text-center">
-                                    <button type="submit" class="btn btn-block btn-dark">Sign In</button>
+                                    <button type="submit" class="btn btn-block btn-dark"><a href="/home">Sign In</a></button>
                                 </div>
                                 <div class="col-lg-12 text-center mt-5">
-                                    Don't have an account? <a href="/register" class="text-danger">Sign Up</a>
+                                    Don't have an account? <a href="{{url('register')}}" class="text-danger">Sign Up</a>
                                 </div>
                             </div>
                         </form>

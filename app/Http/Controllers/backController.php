@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class backController extends Controller
+class backcontroller extends Controller
 {
-public function index(){
-    return view('home');
-}
+    public function index(){
+        return view ('home');
+    }
 }

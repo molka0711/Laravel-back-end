@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateSubCategoriesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {   Schema::disableForeignKeyConstraints();
+        Schema::create('sub_categories', function (Blueprint $table) {
+            $table->id('id_subcateg');
+            $table->string('name_subcateg');
+            $table->unsignedBigInteger('categ_id');
+            $table->foreign('categ_id')-> references('id')-> on ('categories');  
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('sub_categories');
+    }
+}
