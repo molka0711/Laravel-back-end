@@ -40,3 +40,48 @@ Route::get('/login',function(){
 Route::get('/register',function(){
     return view('register');
 });
+Route::get('/','homecontroller@index');
+
+Route::get('/front/home', function () {
+    return view('front/home');
+});
+
+Route::get('/front/login', function () {
+    return view('front/login');
+});
+
+Route::get('/front/register', function () {
+    return view('front/register');
+});
+
+Route::get('/front/faq', function () {
+    return view('front/faq');
+});
+
+Route::get('/front/check-out', function () {
+    return view('front/check-out');
+});
+
+Route::get('/front/shopping-cart', function () {
+    return view('front/shopping-cart');
+});
+
+Route::get('/front/blog-details', function () {
+    return view('front/blog-details');
+});
+
+Route::get('/front/shop', function () {
+    return view('front/shop');
+});
+
+Route::get('/front/blog', function () {
+    return view('front/blog');
+});
+
+Route::get('/front/contact', function () {
+    return view('front/contact');
+});
+
+Route::get('/front/product', function () {
+    return view('front/product');
+});
