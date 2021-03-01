@@ -16,10 +16,15 @@ use Illuminate\Support\Facades\Route;
 /*Route::get('/', function () {
     return view('welcome');
 });*/
+<<<<<<< HEAD
 Route::post('postLogin','Authcontroller@postLogin');
 Route::post('postRegister','Authcontroller@postRegister');
 Route::get('/','backcontroller@index');
 Route::get('logout','Authcontroller@logout');
+=======
+
+Route::get('/','backcontroller@index');
+>>>>>>> 700df427c2d08fe21fac1235be8c0cf3a1ec4156
 
 Route::get('/home',function(){
     return view('home');

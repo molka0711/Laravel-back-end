@@ -410,6 +410,20 @@
                         </li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Authentification</span></li>
+<<<<<<< HEAD
+=======
+
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/login"
+                                aria-expanded="false"><i data-feather="lock" class="feather-icon"></i><span
+                                    class="hide-menu">Login
+                                </span></a>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link"
+                                href="/register" aria-expanded="false"><i data-feather="lock"
+                                    class="feather-icon"></i><span class="hide-menu">Register
+                                </span></a>
+                        </li>
+>>>>>>> 700df427c2d08fe21fac1235be8c0cf3a1ec4156
 
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
                                 aria-expanded="false"><i data-feather="feather" class="feather-icon"></i><span
@@ -463,7 +477,11 @@
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="docs/docs.html"
                                 aria-expanded="false"><i data-feather="edit-3" class="feather-icon"></i><span
                                     class="hide-menu">Documentation</span></a></li>
+<<<<<<< HEAD
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/"
+=======
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="/login"
+>>>>>>> 700df427c2d08fe21fac1235be8c0cf3a1ec4156
                                 aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
                                     class="hide-menu">Logout</span></a></li>
                     </ul>
