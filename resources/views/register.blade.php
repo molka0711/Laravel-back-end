@@ -52,16 +52,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-<<<<<<< HEAD
                                         <input class="form-control" type="text" id="inputName"name="name"placeholder="Username">
-=======
-                                        <input class="form-control" type="text" placeholder="First name">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="Last name">
->>>>>>> 700df427c2d08fe21fac1235be8c0cf3a1ec4156
                                     </div>
                                     @if ($errors->has('name'))
                                     <span class="error">{{ $errors-> first('name')}}</span>
@@ -84,15 +75,7 @@
                                     <span class="error">{{ $errors-> first('password')}}</span>
                                     @endif
                                 </div>
-<<<<<<< HEAD
     
-=======
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" type="password" placeholder="Repeat password">
-                                    </div>
-                                </div>
->>>>>>> 700df427c2d08fe21fac1235be8c0cf3a1ec4156
                                 <div class="col-lg-12 text-center">
                                     <button type="submit" class="btn btn-block btn-dark">Sign Up</button>
                                 </div>

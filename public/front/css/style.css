@@ -36,7 +36,7 @@ body {
 	height: 100%;
 	font-family: "Muli", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+	font-smothing: antialiased;
 }
 
 h1,
@@ -44,6 +44,7 @@ h2,
 h3,
 h4,
 h5,
+
 h6 {
 	margin: 0;
 	color: #111111;
@@ -377,7 +378,7 @@ ol {
 }
 
 .header-top .ht-right .login-panel {
-	float: right;
+	float:right;
 	font-size: 14px;
 	color: #252525;
 	display: inline-block;
@@ -4310,3 +4311,43 @@ ol {
 		padding-right: 15px;
 	}
 }
+
+.overlay {
+	position:fixed;
+   
+	top:5%;
+	bottom:2%;
+	right:40%;
+	left:40%;
+	height: 50%;
+	width: 100%;
+	z-index:1;
+	display:none;
+	
+	}
+
+	.popup{
+		margin: 10% auto;
+		width : 70%;
+		background-color: rgb(243, 243, 243);
+		padding: 1em;
+		box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
+		}
+		.btnPopup{
+			background-color: orangered;
+			padding: 1em 2em;
+			cursor: pointer;
+	    }
+
+		.btnClose {
+			float: right;
+			font-size:16pt;
+			cursor: pointer;
+			color: rgb(26, 26, 26);
+			}
+       .href :visited{
+			color:rgb(153, 28, 90);
+			font-size:100px;
+		}
+	   

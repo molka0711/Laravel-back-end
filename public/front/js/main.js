@@ -248,3 +248,23 @@
 	});
 
 })(jQuery);
+
+//pop up
+
+var btnPopup = document.getElementById('btnPopup');
+var overlay = document.getElementById('overlay');
+btnPopup.addEventListener('click',openMoadl);
+function openMoadl() {
+overlay.style.display='block';
+}
+// fermeture pop up
+var btnClose = document.getElementById('btnClose');
+btnClose.addEventListener('click',closeModal);
+function closeModal() {
+    overlay.style.display='none';}
+
+// add phone
+
+    function fAddPhone() { 
+        document.getElementById('Cible').innerHTML ='<input type="text" placeholder="your phone number....."  size="60%"/> '; 
+    } 

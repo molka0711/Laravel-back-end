@@ -28,7 +28,7 @@
                             <h1>Black friday</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore</p>
-                            <a href="#" class="primary-btn">Shop Now</a>
+                            <a href="./shop" class="primary-btn">Shop Now</a>
                         </div>
                     </div>
                     <div class="off-card">
@@ -54,6 +54,9 @@
             </div>
         </div>
     </section>
+
+    <!-- Hero Section End -->
+
     <!-- Banner Section Begin -->
     <div class="banner-section spad">
         <div class="container-fluid">
